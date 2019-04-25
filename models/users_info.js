@@ -1,7 +1,7 @@
 module.exports = function(sequelize, DataTypes) {
   var users_info = sequelize.define("users_info", {
     id:  {
-      type: DataTypes.INT,
+      type: DataTypes.INTEGER,
       primaryKey: true,
       allowNull: false,
     },
@@ -31,7 +31,23 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: false,
       allowNull: true,
     },
-  });
+  },
+    {
+      indexes: [
+          {
+              unique: true,
+              fields: ['uuid']
+          }
+      ]
+    },
+  );
+
+  users_info.associate = function(models) {
+    users_info.hasMany(models.surveys_info, {
+      onDelete: "cascade"
+    });
+  };
+
   return users_info;
 };
 
@@ -45,3 +61,4 @@ module.exports = function(sequelize, DataTypes) {
 //   });
 //   return Example;
 // };
+
