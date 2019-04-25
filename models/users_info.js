@@ -1,13 +1,3 @@
-// From the initial setup
-// module.exports = function(sequelize, DataTypes) {
-//   var Example = sequelize.define("Example", {
-//     text: DataTypes.STRING,
-//     description: DataTypes.TEXT
-//   });
-//   return Example;
-// };
-
-
 module.exports = function(sequelize, DataTypes) {
   var users_info = sequelize.define("users_info", {
     id:  {
@@ -45,3 +35,13 @@ module.exports = function(sequelize, DataTypes) {
   return users_info;
 };
 
+
+
+// From the initial setup
+// module.exports = function(sequelize, DataTypes) {
+//   var Example = sequelize.define("Example", {
+//     text: DataTypes.STRING,
+//     description: DataTypes.TEXT
+//   });
+//   return Example;
+// };
