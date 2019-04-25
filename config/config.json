@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "",
-    "database": "exampledb",
+    "password": "root",
+    "database": "meyers_gigs_db",
     "host": "localhost",
     "dialect": "mysql"
   },
