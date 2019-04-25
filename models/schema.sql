@@ -40,7 +40,8 @@ CREATE TABLE types_info(
     id INTEGER(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     personality VARCHAR(255),
     description TEXT(500),
-    img_url TEXT(255)
+    img_url TEXT(255),
+    job_titles VARCHAR(255)
 );
 
 DELIMITER ;;
