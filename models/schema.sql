@@ -41,7 +41,9 @@ CREATE TABLE types_info(
     personality VARCHAR(255),
     description TEXT(500),
     img_url TEXT(255),
-    job_titles VARCHAR(255)
+    job_title_1 VARCHAR(255),
+    job_title_2 VARCHAR(255),
+    job_title_3 VARCHAR(255)
 );
 
 DELIMITER ;;
