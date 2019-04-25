@@ -10,6 +10,16 @@ module.exports = function(app) {
       });
     });
   });
+  
+  // Load survey page
+  app.get("/survey", function(req, res) {
+    db.Example.findAll({}).then(function(dbExamples) {
+      res.render("survey", {
+        msg: "The Personality Test!",
+        examples: dbExamples
+      });
+    });
+  });
 
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
