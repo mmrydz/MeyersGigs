@@ -43,9 +43,9 @@ VALUES (
 'ISTJ',
 'Quiet, serious, earn success by thoroughness and dependability. Practical, matter-of-fact, realistic, and responsible. Decide logically what should be done and work toward it steadily, regardless of distractions. Take pleasure in making everything orderly and organized - their work, their home, their life. Value traditions and loyalty.',
 '/img/ISTJ.jpg',
-'Accountant/Auditor',
-'Actuary',
-'Administrative Services Manager');
+'Accountant',
+'Financial Analyst',
+'Engineer');
 
 INSERT INTO types_info (personality, description, img_url, job_title_1, job_title_2, job_title_3)
 VALUES (
@@ -53,7 +53,7 @@ VALUES (
 'Quiet, friendly, responsible, and conscientious. Committed and steady in meeting their obligations. Thorough, painstaking, and accurate. Loyal, considerate, notice and remember specifics about people who are important to them, concerned with how others feel. Strive to create an orderly and harmonious environment at work and at home.',
 '/img/ISFJ.jpg',
 'Social Worker',
-'Agricultural Food Science Technician',
+'Pharmacist',
 'Teacher');
 
 INSERT INTO types_info (personality, description, img_url, job_title_1, job_title_2, job_title_3)
@@ -142,42 +142,42 @@ VALUES (
 'ENTP',
 'Quick, ingenious, stimulating, alert, and outspoken. Resourceful in solving new and challenging problems. Adept at generating conceptual possibilities and then analyzing them strategically. Good at reading other people. Bored by routine, will seldom do the same thing the same way, apt to turn to one new interest after another.',
 '/img/ENTP.jpg',
-'',
-'',
-'');
+'Financial Planner',
+'Architect',
+'Environmental Scientist');
 
 INSERT INTO types_info (personality, description, img_url, job_title_1, job_title_2, job_title_3)
 VALUES (
 'ESTJ',
 'Practical, realistic, matter-of-fact. Decisive, quickly move to implement decisions. Organize projects and people to get things done, focus on getting results in the most efficient way possible. Take care of routine details. Have a clear set of logical standards, systematically follow them and want others to also. Forceful in implementing their plans.',
 '/img/ESTJ.jpg',
-'',
-'',
-'');
+'Sales Engineer',
+'Stock Broker',
+'Insurance Agent');
 
 INSERT INTO types_info (personality, description, img_url, job_title_1, job_title_2, job_title_3)
 VALUES (
 'ESFJ',
 'Warmhearted, conscientious, and cooperative. Want harmony in their environment, work with determination to establish it. Like to work with others to complete tasks accurately and on time. Loyal, follow through even in small matters. Notice what others need in their day-by-day lives and try to provide it. Want to be appreciated for who they are and for what they contribute.',
 '/img/ESFJ.jpg',
-'',
-'',
-'');
+'Elementary Teacher',
+'Special Education Teacher',
+'Child Care Provider');
 
 INSERT INTO types_info (personality, description, img_url, job_title_1, job_title_2, job_title_3)
 VALUES (
 'ENFJ',
 'Warm, empathetic, responsive, and responsible. Highly attuned to the emotions, needs, and motivations of others. Find potential in everyone, want to help others fulfill their potential. May act as catalysts for individual and group growth. Loyal, responsive to praise and criticism. Sociable, facilitate others in a group, and provide inspiring leadership.',
 '/img/ENFJ.jpg',
-'',
-'',
-'');
+'Health Educator',
+'Editor',
+'Advertising Promotions Manager');
 
 INSERT INTO types_info (personality, description, img_url, job_title_1, job_title_2, job_title_3)
 VALUES (
 'ENTJ',
 'Frank, decisive, assume leadership readily. Quickly see illogical and inefficient procedures and policies, develop and implement comprehensive systems to solve organizational problems. Enjoy long-term planning and goal setting. Usually well informed, well read, enjoy expanding their knowledge and passing it on to others. Forceful in presenting their ideas.',
 '/img/ENTJ.jpg',
-'',
-'',
-'');
+'Management Consultant',
+'Advertising Promotions Manager',
+'Compensation or Benefits Manager');
