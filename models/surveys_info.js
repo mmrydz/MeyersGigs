@@ -5,102 +5,102 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true,
       allowNull: false
     },
-    q1: {
+    quest1: {
       type: DataTypes.INTEGER,
       primaryKey: false,
       allowNull: true
     },
-    q2: {
+    quest2: {
       type: DataTypes.INTEGER,
       primaryKey: false,
       allowNull: true
     },
-    q3: {
+    quest3: {
       type: DataTypes.INTEGER,
       primaryKey: false,
       allowNull: true
     },
-    q4: {
+    quest4: {
       type: DataTypes.INTEGER,
       primaryKey: false,
       allowNull: true
     },
-    q5: {
+    quest5: {
       type: DataTypes.INTEGER,
       primaryKey: false,
       allowNull: true
     },
-    q6: {
+    quest6: {
       type: DataTypes.INTEGER,
       primaryKey: false,
       allowNull: true
     },
-    q7: {
+    quest7: {
       type: DataTypes.INTEGER,
       primaryKey: false,
       allowNull: true
     },
-    q8: {
+    quest8: {
       type: DataTypes.INTEGER,
       primaryKey: false,
       allowNull: true
     },
-    q9: {
+    quest9: {
       type: DataTypes.INTEGER,
       primaryKey: false,
       allowNull: true
     },
-    q10: {
+    quest10: {
       type: DataTypes.INTEGER,
       primaryKey: false,
       allowNull: true
     },
-    q11: {
+    quest11: {
       type: DataTypes.INTEGER,
       primaryKey: false,
       allowNull: true
     },
-    q12: {
+    quest12: {
       type: DataTypes.INTEGER,
       primaryKey: false,
       allowNull: true
     },
-    q13: {
+    quest13: {
       type: DataTypes.INTEGER,
       primaryKey: false,
       allowNull: true
     },
-    q14: {
+    quest14: {
       type: DataTypes.INTEGER,
       primaryKey: false,
       allowNull: true
     },
-    q15: {
+    quest15: {
       type: DataTypes.INTEGER,
       primaryKey: false,
       allowNull: true
     },
-    q16: {
+    quest16: {
       type: DataTypes.INTEGER,
       primaryKey: false,
       allowNull: true
     },
-    q17: {
+    quest17: {
       type: DataTypes.INTEGER,
       primaryKey: false,
       allowNull: true
     },
-    q18: {
+    quest18: {
       type: DataTypes.INTEGER,
       primaryKey: false,
       allowNull: true
     },
-    q19: {
+    quest19: {
       type: DataTypes.INTEGER,
       primaryKey: false,
       allowNull: true
     },
-    q20: {
+    quest20: {
       type: DataTypes.INTEGER,
       primaryKey: false,
       allowNull: true

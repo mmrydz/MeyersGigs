@@ -21,13 +21,13 @@ SELECT * FROM users_info;
 -------------------------------------------------
 -- Section Seeds the surveys_info table
 
-INSERT INTO surveys_info (q1, q2 , q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18, q19, q20)
+INSERT INTO surveys_info (quest1, quest2 , quest3, quest4, quest5, quest6, quest7, quest8, quest9, quest10, quest11, quest12, quest13, quest14, quest15, quest16, quest17, quest18, quest19, quest20)
 VALUES (1,3,4,5,1,3,4,5,3,4,5,3,1,2,2,2,1,2,3,4);
 
-INSERT INTO surveys_info (q1, q2 , q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18, q19, q20)
+INSERT INTO surveys_info (quest1, quest2 , quest3, quest4, quest5, quest6, quest7, quest8, quest9, quest10, quest11, quest12, quest13, quest14, quest15, quest16, quest17, quest18, quest19, quest20)
 VALUES (1,1,2,5,1,1,4,5,4,4,5,3,5,5,5,2,1,1,3,4);
 
-INSERT INTO surveys_info (q1, q2 , q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18, q19, q20)
+INSERT INTO surveys_info (quest1, quest2 , quest3, quest4, quest5, quest6, quest7, quest8, quest9, quest10, quest11, quest12, quest13, quest14, quest15, quest16, quest17, quest18, quest19, quest20)
 VALUES (1,3,1,1,1,3,2,3,3,1,3,1,1,2,2,2,1,2,1,1);
 
 SELECT * FROM surveys_info;
