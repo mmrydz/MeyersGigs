@@ -70,9 +70,9 @@ VALUES (
 'INTJ',
 'Have original minds and great drive for implementing their ideas and achieving their goals. Quickly see patterns in external events and develop long-range explanatory perspectives. When committed, organize a job and carry it through. Skeptical and independent, have high standards of competence and performance - for themselves and others.',
 '/img/INTJ.jpg',
-'Accountant/Auditor',
+'Accountant',
 'Insurance/Underwriter',
-'Agricultural Engineer');
+'Engineer');
 
 INSERT INTO types_info (personality, description, img_url, job_title_1, job_title_2, job_title_3)
 VALUES (
@@ -106,7 +106,7 @@ VALUES (
 'INTP',
 'Seek to develop logical explanations for everything that interests them. Theoretical and abstract, interested more in ideas than in social interaction. Quiet, contained, flexible, and adaptable. Have unusual ability to focus in depth to solve problems in their area of interest. Skeptical, sometimes critical, always analytical.',
 '/img/INTP.jpg',
-'Computer IS Manager',
+'Software Developer',
 'Web Developer',
 'Architect');
 
@@ -117,25 +117,25 @@ VALUES (
 '/img/ESTP.jpg',
 'General Contractor',
 'Building Surveyor',
-'Contractor');
+'Construction Worker');
 
 INSERT INTO types_info (personality, description, img_url, job_title_1, job_title_2, job_title_3)
 VALUES (
 'ESFP',
 'Outgoing, friendly, and accepting. Exuberant lovers of life, people, and material comforts. Enjoy working with others to make things happen. Bring common sense and a realistic approach to their work, and make work fun. Flexible and spontaneous, adapt readily to new people and environments. Learn best by trying a new skill with other people.',
 '/img/ESFP.jpg',
-'General Contractor',
-'Building Surveyor',
-'Contractor');
+'Elementary Teacher',
+'Recreation Worker',
+'Social Worker');
 
 INSERT INTO types_info (personality, description, img_url, job_title_1, job_title_2, job_title_3)
 VALUES (
 'ENFP',
 'Warmly enthusiastic and imaginative. See life as full of possibilities. Make connections between events and information very quickly, and confidently proceed based on the patterns they see. Want a lot of affirmation from others, and readily give appreciation and support. Spontaneous and flexible, often rely on their ability to improvise and their verbal fluency.',
 '/img/ENFP.jpg',
-'General Contractor',
-'Building Surveyor',
-'Contractor');
+'Actor',
+'Advertising Sales Agent',
+'Real Estate Agent');
 
 INSERT INTO types_info (personality, description, img_url, job_title_1, job_title_2, job_title_3)
 VALUES (
