@@ -117,12 +117,3 @@ module.exports = function(sequelize, DataTypes) {
 
   return surveys_info;
 };
-
-// From the initial setup
-// module.exports = function(sequelize, DataTypes) {
-//   var Example = sequelize.define("Example", {
-//     text: DataTypes.STRING,
-//     description: DataTypes.TEXT
-//   });
-//   return Example;
-// };
