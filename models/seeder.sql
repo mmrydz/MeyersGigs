@@ -99,7 +99,7 @@ VALUES (
 '/img/INFP.jpg',
 'Fine Artist',
 'Mental Health Counselor',
-'Curator/Archivist');
+'Curator');
 
 INSERT INTO types_info (personality, description, img_url, job_title_1, job_title_2, job_title_3)
 VALUES (
