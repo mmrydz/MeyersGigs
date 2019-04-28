@@ -11,7 +11,7 @@ module.exports = function(app) {
     });
   });
   
-  // Load survey page
+  // Load survey page and pass in user_info
   app.get("/survey", function(req, res) {
     db.Example.findAll({}).then(function(dbExamples) {
       res.render("survey", {
@@ -21,7 +21,7 @@ module.exports = function(app) {
     });
   });
 
-  // Load example page and pass in an example by id
+  // Load results page and pass in user_info with personality type updated
   app.get("/example/:id", function(req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function(
       dbExample
