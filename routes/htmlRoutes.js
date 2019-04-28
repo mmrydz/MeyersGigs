@@ -12,6 +12,15 @@ module.exports = function(app) {
   });
   
   // Load survey page and pass in user_info
+  // The user's personality type is determined as follows:
+  // 1. If total score for questions 1-5 <= 13, then their first letter is I.  If the total score is  > 13 , E.
+  //    Append that letter to the ‘personality’ string in users_info.
+  // 2. If total score for questions 6-10 <= 13, then their first letter is N.  If the total score is  > 13 , S.
+  //    Append that letter to the ‘personality’ string in users_info.
+  // 3. If total score for questions 11-15 <= 13, then their first letter is F.  If the total score is  > 13 , T.
+  //    Append that letter to the ‘personality’ string in users_info.
+  // 4. If total score for questions 16-20 <= 13, then their first letter is J.  If the total score is  > 13 , P.
+  //    Append that letter to the ‘personality’ string in users_info.
   app.get("/survey", function(req, res) {
     db.Example.findAll({}).then(function(dbExamples) {
       res.render("survey", {
