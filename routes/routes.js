@@ -8,16 +8,42 @@ module.exports = function(app) {
     });
   });
 
-  // Load survey page and pass in user_info
-  // The user's personality type is determined as follows:
-  // 1. If total score for questions 1-5 <= 13, then their first letter is I.  If the total score is  > 13 , E.
-  //    Append that letter to the ‘personality’ string in users_info.
-  // 2. If total score for questions 6-10 <= 13, then their first letter is N.  If the total score is  > 13 , S.
-  //    Append that letter to the ‘personality’ string in users_info.
-  // 3. If total score for questions 11-15 <= 13, then their first letter is F.  If the total score is  > 13 , T.
-  //    Append that letter to the ‘personality’ string in users_info.
-  // 4. If total score for questions 16-20 <= 13, then their first letter is J.  If the total score is  > 13 , P.
-  //    Append that letter to the ‘personality’ string in users_info.
+var db = require("../models");
+
+module.exports = function (app) {
+
+  // updates users_info with survey results and personality, then redirects to /results
+  app.put("/survey/:id", function (req, res) {
+    db.users_info.update({
+        quest1: req.body.quest1,
+        quest2: req.body.quest2,
+        quest3: req.body.quest3,
+        quest4: req.body.quest4,
+        quest5: req.body.quest5,
+        quest6: req.body.quest6,
+        quest7: req.body.quest7,
+        quest8: req.body.quest8,
+        quest9: req.body.quest9,
+        quest10: req.body.quest10,
+        quest11: req.body.quest11,
+        quest12: req.body.quest12,
+        quest13: req.body.quest13,
+        quest14: req.body.quest14,
+        quest15: req.body.quest15,
+        quest16: req.body.quest16,
+        quest17: req.body.quest17,
+        quest18: req.body.quest18,
+        quest19: req.body.quest19,
+        quest20: req.body.quest20,
+        personality: req.body.personality
+    }, {
+    where: req.params.id
+    })
+      .then(function() {
+        res.json("/results");
+      })
+  })
+};
 
   // posts the survey object to the server then renders the result handlebars page
   app.post("/survey/:id", function(req, res) {
