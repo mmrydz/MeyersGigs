@@ -13,19 +13,21 @@ module.exports = function(app) {
     console.log(username);
     console.log(password);
     if (username && password) {
-      db.findOne({
-        where: { username: username, password: password }
-      }).then(function(results) {
-        console.log(results);
-        if (results.length > 0) {
-          req.session.loggedin = true;
-          req.session.username = username;
-          res.redirect("survey");
-        } else {
-          response.send("Incorrect Username and/or Password!");
-        }
-        res.end();
-      });
+      db.users_info
+        .findOne({
+          where: { username: username, password: password }
+        })
+        .then(function(results) {
+          console.log(results);
+          if (results.length > 0) {
+            req.session.loggedin = true;
+            req.session.username = username;
+            res.redirect("survey");
+          } else {
+            response.send("Incorrect Username and/or Password!");
+          }
+          res.end();
+        });
     } else {
       response.send("Please enter Username and Password!");
       response.end();
