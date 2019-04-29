@@ -338,35 +338,44 @@
         // 4. If total score for questions 16-20 <= 13, then their first letter is J.  If the total score is  > 13 , P.
         //    Append that letter to the ‘personality’ string in users_info.
         
-        let firstLetter = "";
-        let secondLetter = "";
-        let thirdLetter = "";
-        let fourthLetter = "";
-        let personality = "";
+         let firstLetter = "";
+         let secondLetter = "";
+         let thirdLetter = "";
+         let fourthLetter = "";
 
-        if (sum(scores(1: 5)) <= 13 {
-            firstLetter = I
-        } else {
-            firstLetter = E
-        });
-        if (sum(scores(6: 10)) <= 13 {
-            firstLetter = N
-        } else {
-            firstLetter = S
-        });
-        if (sum(scores(11: 15)) <= 13 {
-            firstLetter = F
-        } else {
-            firstLetter = T
-        });
-        if (sum(scores(16: 20)) <= 13 {
-            firstLetter = J
-        } else {
-            firstLetter = P
-        });
+         let sumFirstLetter = scores[0] + scores[1] + scores[2] + scores[3] + scores [4];
+         let sumSecondLetter = scores[5] + scores[6] + scores[7] + scores[8] + scores [9];
+         let sumThirdLetter = scores[10] + scores[11] + scores[12] + scores[13] + scores [14];
+         let sumFourthLetter = scores[15] + scores[16] + scores[17] + scores[18] + scores [19];
 
-        var personality = firstLetter.concat(secondLetter, thirdLetter, fourthLetter);
-    }
+        if (sumFirstLetter <= 13) {
+            firstLetter = "I"
+        } else {
+            firstLetter = "E"
+        };
+
+        if (sumSecondLetter <= 13) {
+            secondLetter = "N"
+        } else {
+            secondLetter = "S"
+        };
+
+        if  (sumThirdLetter <= 13) {
+            thirdLetter = "F"
+        } else {
+            thirdLetter = "T"
+        };
+
+        if  (sumFourthLetter <= 13) {
+            fourthLetter = "J"
+        } else {
+            fourthLetter = "P"
+        };
+
+        let personality = firstLetter.concat(secondLetter, thirdLetter, fourthLetter);
+        console.log(personality);
+        return(personality);    
+        }
 
         // resets the form after submit
         $("#survey")[0].reset();
