@@ -34,9 +34,9 @@ module.exports = function(app) {
   });
 
   // get results data from server where user personality type is specific value
-  app.get("/results/:id", function(req, res) {
+  app.get("/results/:personality", function(req, res) {
     db.types_info
-      .findAll({ where: { id: req.params.id } })
+      .findAll({ where: { personality: req.params.id} })
       .then(function(dbExample) {
         res.render("result", {
           Personality: dbExample.personality,

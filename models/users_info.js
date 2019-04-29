@@ -1,9 +1,10 @@
 module.exports = function(sequelize, DataTypes) {
   var users_info = sequelize.define("users_info", {
-    id:  {
+    id:{
       type: DataTypes.INTEGER,
       primaryKey: true,
-      allowNull: false,
+      autoIncrement: true,
+      allowNull: true
     },
     uuid: {
       type: DataTypes.UUID,
@@ -30,6 +31,14 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       primaryKey: false,
       allowNull: true,
+    },
+    createdAt: {
+      type: DataTypes.DATE,
+      defaultValue: sequelize.literal('NOW()'),
+    },
+    updatedAt: {
+      type: DataTypes.DATE,
+      defaultValue: sequelize.literal('NOW()'),
     },
   },
     {
