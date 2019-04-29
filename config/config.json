@@ -1,21 +1,23 @@
 {
   "development": {
     "username": "root",
-    "password": "root",
+    "password": "G4qtyx7v1!",
     "database": "meyers_gigs_db",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "",
-    "database": "testdb",
-    "host": "localhost",
-    "dialect": "mysql",
-    "logging": false
+    "password": "G4qtyx7v1!",
+    "database": "meyers_gigs_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
   },
   "production": {
-    "use_env_variable": "JAWSDB_URL",
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   }
 }
