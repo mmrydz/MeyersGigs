@@ -3,7 +3,8 @@ module.exports = function(sequelize, DataTypes) {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
-      allowNull: false
+      autoIncrement: true,
+      allowNull: true
     },
     personality: {
       type: DataTypes.STRING,
@@ -11,7 +12,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     description: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       primaryKey: false,
       allowNull: true
     },
@@ -34,7 +35,15 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       primaryKey: false,
       allowNull: true
-    }
+    },
+    createdAt: {
+      type: DataTypes.DATE,
+      defaultValue: sequelize.literal('NOW()'),
+    },
+    updatedAt: {
+      type: DataTypes.DATE,
+      defaultValue: sequelize.literal('NOW()'),
+    },
   });
 
   return types_info;
