@@ -13,7 +13,7 @@ var db = require("../models");
 module.exports = function (app) {
 
   // updates users_info with survey results and personality, then redirects to /results
-  app.put("/survey/:id", function (req, res) {
+  app.put("/api/survey/:id", function (req, res) {
     db.users_info.update({
         quest1: req.body.quest1,
         quest2: req.body.quest2,
@@ -40,7 +40,7 @@ module.exports = function (app) {
     where: req.params.id
     })
       .then(function() {
-        res.json("/results");
+        res.json("/api/results");
       })
   })
 };
