@@ -1,50 +1,55 @@
 <div class="container">
-    <h1>
+    <br>
+    <h1 class="text-center">
         Results
     </h1>
+    <br>
     <div class="card col-12">
         <div class="card-body">
+            {{#each results}}
             <h1>
                 Personality Type:
             </h1>
-            <p>
-                {{{Personality}}}
+            <p> 
+                
+                {{this.personality}}
+                
             </p>
 
             <h1>
                 Description:
             </h1>
             <p>
-                {{{Description}}}
+                {{this.description}}
             </p>
 
             <h1>
                 Celebrities:
             </h1>
-            <p>
-                {{{Celebrity}}}
-            </p>
+            <img src = {{this.img_url}}>
+            </img>
 
             <h1>
                 Job 1:
             </h1>
             <p>
-                {{{Job1}}}
+                {{this.job_title_1}}
             </p>
 
             <h1>
-                Job2:
+                Job 2:
             </h1>
             <p>
-                {{{Job2}}}
+                {{this.job_title_2}}
             </p>
 
             <h1>
-                Job3:
+                Job 3:
             </h1>
             <p>
-                {{{Job3}}}
+                {{this.job_title_3}}
             </p>
+            {{/each}}
         </div>
     </div>
 
