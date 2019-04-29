@@ -1,11 +1,23 @@
 require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
+var mysql = require("mysql2");
+var session = require("express-session");
+var path = require("path");
 
 var db = require("./models");
 
 var app = express();
 var PORT = process.env.PORT || 3000;
+
+// Login code
+app.use(
+  session({
+    secret: "secret",
+    resave: true,
+    saveUninitialized: true
+  })
+);
 
 // Middleware
 app.use(express.urlencoded({ extended: false }));

@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "root",
+    "password": "G4qtyx7v1!",
     "database": "meyers_gigs_db",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "",
+    "password": "G4qtyx7v1!",
     "database": "testdb",
     "host": "localhost",
     "dialect": "mysql",
