@@ -8,14 +8,11 @@
         <div class="card-body">
             {{#each results}}
             <h1>
-                Personality Type:
+                Personality:
             </h1>
-            <p> 
-                
+           <p>
                 {{this.personality}}
-                
-            </p>
-
+           </p>
             <h1>
                 Description:
             </h1>
@@ -24,31 +21,49 @@
             </p>
 
             <h1>
-                Celebrities:
+                 Celebrities:
             </h1>
-            <img src = {{this.img_url}}>
+            <div class="text-center">
+                <br>
+            <img src={{this.img_url}}>
             </img>
-
+            <br>
+            </div>
+            <br>
             <h1>
-                Job 1:
+                Jobs:
             </h1>
-            <p>
-                {{this.job_title_1}}
-            </p>
 
-            <h1>
-                Job 2:
-            </h1>
-            <p>
-                {{this.job_title_2}}
-            </p>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{this.job_title_1}}</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{this.job_title_2}}</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{this.job_title_3}}</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <h1>
-                Job 3:
-            </h1>
-            <p>
-                {{this.job_title_3}}
-            </p>
             {{/each}}
         </div>
     </div>
