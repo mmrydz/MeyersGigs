@@ -276,10 +276,7 @@
         <!---------------  Javascript ------------------------------>
 
     <script type="text/javascript">
-        // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
-        // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
-        // Our api recognizes the route (/api/friends)... and then runs the associated code (found in apiRoutes.js).
-        // In this case the associated code "saves" the data to the friends.js file
+        // In this code below we create the Front-end JavaScript which grabs our form data and interprets it as a personality type
 
         $(".submit").on("click", function (event) {
             event.preventDefault();
@@ -309,28 +306,28 @@
             if (validateForm()) {
                 // We create an object and save the user's inputs to it
                 var scores: [
-                    parseInt($("#quest_1").val()),
-            parseInt($("#quest_2").val()),
-            parseInt($("#quest_3").val()),
-            parseInt($("#quest_4").val()),
-            parseInt($("#quest_5").val()),
-            parseInt($("#quest_6").val()),
-            parseInt($("#quest_7").val()),
-            parseInt($("#quest_8").val()),
-            parseInt($("#quest_9").val()),
-            parseInt($("#quest_10").val()),
-            parseInt($("#quest_11").val()),
-            parseInt($("#quest_12").val()),
-            parseInt($("#quest_13").val()),
-            parseInt($("#quest_14").val()),
-            parseInt($("#quest_15").val()),
-            parseInt($("#quest_16").val()),
-            parseInt($("#quest_17").val()),
-            parseInt($("#quest_18").val()),
-            parseInt($("#quest_19").val()),
-            parseInt($("#quest_20").val()),
+                     parseInt($("#quest_1").val()),
+                     parseInt($("#quest_2").val()),
+                     parseInt($("#quest_3").val()),
+                     parseInt($("#quest_4").val()),
+                     parseInt($("#quest_5").val()),
+                     parseInt($("#quest_6").val()),
+                     parseInt($("#quest_7").val()),
+                     parseInt($("#quest_8").val()),
+                     parseInt($("#quest_9").val()),
+                     parseInt($("#quest_10").val()),
+                     parseInt($("#quest_11").val()),
+                     parseInt($("#quest_12").val()),
+                     parseInt($("#quest_13").val()),
+                     parseInt($("#quest_14").val()),
+                     parseInt($("#quest_15").val()),
+                     parseInt($("#quest_16").val()),
+                     parseInt($("#quest_17").val()),
+                     parseInt($("#quest_18").val()),
+                     parseInt($("#quest_19").val()),
+                     parseInt($("#quest_20").val()),
                         ];
-        // Load survey page and pass in user_info
+
         // The user's personality type is determined as follows:
         // 1. If total score for questions 1-5 <= 13, then their first letter is I.  If the total score is  > 13 , E.
         //    Append that letter to the ‘personality’ string in users_info.
@@ -340,6 +337,7 @@
         //    Append that letter to the ‘personality’ string in users_info.
         // 4. If total score for questions 16-20 <= 13, then their first letter is J.  If the total score is  > 13 , P.
         //    Append that letter to the ‘personality’ string in users_info.
+        
         let firstLetter = "";
         let secondLetter = "";
         let thirdLetter = "";
