@@ -26,13 +26,33 @@ CREATE DATABASE meyers_gigs_db;
 USE meyers_gigs_db;
 
 CREATE TABLE users_info(
-    id INT NOT NULL AUTO_INCREMENT UNIQUE,
-    uuid VARCHAR(255),
+   id INT NOT NULL AUTO_INCREMENT UNIQUE,
+   uuid VARCHAR(255),
    username VARCHAR(255) NOT NULL,
    firstname VARCHAR(255) NOT NULL,
    lastname VARCHAR(255) NOT NULL,
    `password` VARCHAR(255) NOT NULL,
    personality VARCHAR(255),
+   quest1 INT,
+   quest2 INT,
+   quest3 INT,
+   quest4 INT,
+   quest5 INT,
+   quest6 INT,
+   quest7 INT,
+   quest8 INT,
+   quest9 INT,
+   quest10 INT,
+   quest11 INT,
+   quest12 INT,
+   quest13 INT,
+   quest14 INT,
+   quest15 INT,
+   quest16 INT,
+   quest17 INT,
+   quest18 INT,
+   quest19 INT,
+   quest20 INT,
    PRIMARY KEY(id)
 );
 
@@ -57,35 +77,5 @@ BEGIN
 END
 ;;
 
-
 CREATE INDEX idx_uuid
 ON users_info (uuid);
-
--- Section Creates surveys_info Table 
-
-CREATE TABLE surveys_info(
-   id INT NOT NULL AUTO_INCREMENT UNIQUE,
-   uuid VARCHAR(255),
-   quest1 INT,
-   quest2 INT,
-   quest3 INT,
-   quest4 INT,
-   quest5 INT,
-   quest6 INT,
-   quest7 INT,
-   quest8 INT,
-   quest9 INT,
-   quest10 INT,
-   quest11 INT,
-   quest12 INT,
-   quest13 INT,
-   quest14 INT,
-   quest15 INT,
-   quest16 INT,
-   quest17 INT,
-   quest18 INT,
-   quest19 INT,
-   quest20 INT,
-   PRIMARY KEY(id),
-   FOREIGN KEY (uuid) REFERENCES users_info(uuid)
-);
