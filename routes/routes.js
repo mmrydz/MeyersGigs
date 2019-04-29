@@ -22,30 +22,25 @@ module.exports = function(app) {
   // posts the survey object to the server then renders the result handlebars page
   app.post("/survey/:id", function(req, res) {
     db.surveys_info.findAll({}).then(function(dbExamples) {
-      res.render("result", console.log('User updated successfully'));
+      res.render("result", console.log("User updated successfully"));
     });
   });
 
   // updates the user info table with personality type based on survey
   app.put("/users/:id", function(req, res) {
     db.users_info.findOne({}).then(function() {
-      res.render("survey", console.log('User updated successfully'));
+      res.render("survey", console.log("User updated successfully"));
     });
   });
 
   // get results data from server where user personality type is specific value
-  app.get("/results/:personality", function(req, res) {
+  app.get("/results/:id", function(req, res) {
     db.types_info
-      .findAll({ where: { personality: req.params.id} })
+      .findAll({ where: {personality: req.params.id}})
       .then(function(dbExample) {
-        res.render("result", {
-          Personality: dbExample.personality,
-          Description: dbExample.description,
-          Celebrity: dbExample.img_url,
-          Job1: dbExample.job_title_1,
-          Job2: dbExample.job_title_2,
-          Job3: dbExample.job_title_3
-        });
+        var object = {results : dbExample};
+        console.log(object);
+        return res.render("result", object);
       });
   });
 
