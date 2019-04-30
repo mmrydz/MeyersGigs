@@ -77,12 +77,24 @@ module.exports = function(app) {
     res.render("survey");
   });
 
+  // update user data with personality field from server and redirect to result/userspersonality
+  app.put("/survey/:id", function(req, res) {
+    db.users
+      .update(
+        { personality: req.body.personality },
+        { where: { id: req.params.id } }
+      )
+      .then(function() {
+        res.redirect("result/" + req.body.personality);
+      });
+  });
+
   // get results data from server where user personality type is specific value
   app.get("/results/:id", function(req, res) {
     db.types_info
-      .findAll({ where: {personality: req.params.id}})
+      .findAll({ where: { personality: req.params.id } })
       .then(function(dbExample) {
-        var object = {results: dbExample};
+        var object = { results: dbExample };
         console.log(object);
         return res.render("result", object);
       });
