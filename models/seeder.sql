@@ -20,14 +20,19 @@ SELECT * FROM users_infos;
 
 TRUNCATE TABLE types_info;
 
-INSERT INTO types_info (personality, description, img_url, job_title_1, job_title_2, job_title_3)
+INSERT INTO types_info (personality, description, img_url, job_title_1, job_title_2, job_title_3, img_url_job_title_1, img_url_job_title_2, img_url_job_title_3)
 VALUES (
 'ISTJ',
 'Quiet, serious, earn success by thoroughness and dependability. Practical, matter-of-fact, realistic, and responsible. Decide logically what should be done and work toward it steadily, regardless of distractions. Take pleasure in making everything orderly and organized - their work, their home, their life. Value traditions and loyalty.',
 '/img/ISTJ.jpg',
 'Accountant',
 'Financial Analyst',
-'Engineer');
+'Engineer',
+'<a href="https://www.indeed.com/jobs?q=Accountant&l=Washington%2C+DC"><img src="/img/ISTJ_Accountant_img.JPG" /></a>',
+'<a href="https://www.indeed.com/jobs?q=Financial+Analyst&l=Washington%2C+DC"><img src="/img/ISTJ_Financial_Analyst_img.JPG" /></a>',
+'<a href="https://www.indeed.com/jobs?q=Engineer&l=Washington%2C+DC"><img src="/img/ISTJ_Engineer_img.JPG" /></a>'
+);
+
 
 INSERT INTO types_info (personality, description, img_url, job_title_1, job_title_2, job_title_3)
 VALUES (
