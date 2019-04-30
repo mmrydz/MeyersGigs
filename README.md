@@ -11,7 +11,7 @@ npm install mysql mysql2 sequelize fs path env express express-handlebars
 
 Deployment
 ------
-The app is deployed via Heroku utilizing JawsDB to connect with mysql.
+The app is deployed via Heroku utilizing JawsDB to connect with mysql: https://meyersgigs.herokuapp.com/
 
 Authors
 -------
