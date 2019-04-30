@@ -3,14 +3,14 @@ var db = require("../models");
 module.exports = function (app) {
   // Load index page
   app.get("/", function (req, res) {
-    db.users_info.findAll({}).then(function () {
+    db.users.findAll({}).then(function () {
       res.render("index", {});
     });
   });
 
   // updates users_info with survey results and personality, then redirects to /results
   app.put("/survey/:id", function (req, res) {
-    db.users_info.update({
+    db.users.update({
       quest1: req.body.quest1,
       quest2: req.body.quest2,
       quest3: req.body.quest3,
