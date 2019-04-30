@@ -375,8 +375,14 @@
     let personality = firstLetter.concat(secondLetter, thirdLetter, fourthLetter);
     console.log(personality);
     return (personality);    
-        }
 
+    // AJAX post the data to the friends API (userData is the req).
+    $.post("/survey/:id", personality)
+    db.findOne(id).then(function (users) {
+        // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+        res.render, ("results", users)
+    });
+    }    
     // resets the form after submit
     $("#survey")[0].reset();
                 }
