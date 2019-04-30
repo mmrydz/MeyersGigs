@@ -2,7 +2,7 @@
 -------------------------------------------------
 -------------------------------------------------
 -- Section Seeds the users table
-
+INSERT INTO `users` (`username`, `password`) VALUES ('John', 'password123');
 INSERT INTO `users` (`username`, `personality`, `password`) VALUES ('JeffSkilling','ENTJ','blackgold');
 INSERT INTO `users` (`username`, `personality`, `password`) VALUES ('MrsDoubtfire', 'ESFJ', 'kiddos');
 INSERT INTO `users` (`username`, `personality`, `password`) VALUES ('PTBarnum','ENFP','clowns');
