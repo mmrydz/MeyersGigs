@@ -1,12 +1,12 @@
 
 -------------------------------------------------
 -------------------------------------------------
--- Section Seeds the users_info table
+-- Section Seeds the users table
 
 INSERT INTO `users` (`username`, `personality`, `password`) VALUES ('JeffSkilling','blackgold','ENTJ');
 INSERT INTO `users` (`username`, `personality`, `password`) VALUES ('MrsDoubtfire', 'ESFJ', 'kiddos');
 INSERT INTO `users` (`username`, `personality`, `password`) VALUES ('PTBarnum','ENFP','clowns');
-SELECT * FROM users_infos;
+SELECT * FROM users;
 
 -------------------------------------------------
 -------------------------------------------------
