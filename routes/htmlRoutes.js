@@ -77,6 +77,18 @@ module.exports = function(app) {
     res.render("survey");
   });
 
+
+  // get results data from server where user personality type is specific value
+  app.get("/results/:id", function(req, res) {
+    db.types_info
+      .findAll({ where: {personality: req.params.id}})
+      .then(function(dbExample) {
+        var object = {results : dbExample};
+        console.log(object);
+        return res.render("result", object);
+      });
+  });
+
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
