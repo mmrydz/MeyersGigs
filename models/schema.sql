@@ -1,5 +1,5 @@
 DROP DATABASE IF EXISTS meyers_gigs_db;
-CREATE DATABASE meyers_gigs_db DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE DATABASE meyers_gigs_db;
 
 USE meyers_gigs_db;
 
@@ -10,9 +10,6 @@ CREATE TABLE users(
    `personality` VARCHAR(255),
    PRIMARY KEY(id)
 );
-ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-INSERT INTO `users` (`username`, `password`) VALUES ('John', 'password123');
 
 CREATE TABLE types_info(
     id INTEGER(20) NOT NULL AUTO_INCREMENT PRIMARY KEY,
