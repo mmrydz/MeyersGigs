@@ -4,7 +4,7 @@ Existing job search sites assume that users are aware of jobs that would fit the
 
 Our user can go to our full stack web app, take a brief personality test, learn about their personality type and view jobs in their desired location that are appropriate for their personality type.
 
-Our app uses Node and Express Web Server,a MySQL database with a Sequelize ORM, has GET and POST routes for retrieving and adding new data, is deployed using Heroku (with data), and uses Realize.js (for our presentation) as our new technology. The folder structure meets the MVC paradigm requirements, and the coding meets good quality standards. We utilize Handlebars for server-side templating. We utilize data from Indeed.com and mbtidatabase.com. 
+Our app uses Node and Express Web Server,a MySQL database with a Sequelize ORM, has GET and POST routes for retrieving and adding new data, is deployed using Heroku (with data), and uses Realize.js (for our presentation) as our new technology. The folder structure meets the MVC paradigm requirements, and the coding meets good quality standards. We utilize Handlebars for server-side templating. We utilize jobs data from Indeed.com, celebrity personality data from mbtidatabase.com, and information on personality testing from Wikipedia: https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator. 
 
 The Experience
 --------------
