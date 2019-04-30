@@ -374,7 +374,12 @@
 
     let personality = firstLetter.concat(secondLetter, thirdLetter, fourthLetter);
     console.log(personality);
-    return (personality);
+    //return (personality);
+    function redirect() {
+        var url = ("./results/" + personality);
+        window.location(url);
+    };
+    redirect();
 
     // AJAX post the data to the friends API (userData is the req).
     // $.post("/survey/:id", personality)
@@ -383,27 +388,27 @@
        // res.render, ("results", users)
     // });
 
-   let data = { "personality": "ESTJ" }
+   //{{!-- let data = { "personality": "ESTJ" }
 
-    $.ajax({
-        type: 'PUT',
-        url: '/survey/1',
-        contentType: 'application/json',
-        data: JSON.stringify(data), // access in body
-    }).done(function () {
-        console.log('SUCCESS');
-    }).fail(function (msg) {
-        console.log('FAIL');
-    }).always(function (msg) {
-        console.log('ALWAYS');
-    });
-
-
-    // };
+    //$.ajax({
+    //    type: 'PUT',
+    //    url: '/survey/1',
+     //   contentType: 'application/json',
+     //   data: JSON.stringify(data), // access in body
+    //}).done(function () {
+    //    console.log('SUCCESS');
+    //}).fail(function (msg) {
+    //    console.log('FAIL');
+    //}).always(function (msg) {
+    //    console.log('ALWAYS');
+    //}); --}}
 
 
+    };
 
- 
+
+
+
 
 
     // resets the form after submit
