@@ -36,6 +36,36 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: false,
       allowNull: true
     },
+     job_title_1_img: {
+      type: DataTypes.STRING,
+      primaryKey: false,
+      allowNull: true
+    },
+    job_title_2_img: {
+      type: DataTypes.STRING,
+      primaryKey: false,
+      allowNull: true
+    },
+    job_title_3_img: {
+      type: DataTypes.STRING,
+      primaryKey: false,
+      allowNull: true
+    },
+        job_title_1_url: {
+      type: DataTypes.STRING,
+      primaryKey: false,
+      allowNull: true
+    },
+    job_title_2_url: {
+      type: DataTypes.STRING,
+      primaryKey: false,
+      allowNull: true
+    },
+    job_title_3_url: {
+      type: DataTypes.STRING,
+      primaryKey: false,
+      allowNull: true
+    },
     createdAt: {
       type: DataTypes.DATE,
       defaultValue: sequelize.literal('NOW()'),
