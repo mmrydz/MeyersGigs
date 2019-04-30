@@ -8,28 +8,8 @@ CREATE TABLE users(
    `username` VARCHAR(100),
    `password` VARCHAR(255),
    `personality` VARCHAR(255),
-   `quest1` INT,
-   `quest2` INT,
-   `quest3` INT,
-   `quest4` INT,
-   `quest5` INT,
-   `quest6` INT,
-   `quest7` INT,
-   `quest8` INT,
-   `quest9` INT,
-   `quest10` INT,
-   `quest11` INT,
-  quest12 INT,
-  quest13 INT,
-  quest14 INT,
-  quest15 INT,
-  quest16 INT,
-  quest17 INT,
-  quest18 INT,
-  quest19 INT,
-  quest20 INT,
    PRIMARY KEY(id)
-)
+);
 ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `users` (`username`, `password`) VALUES ('John', 'password123');
@@ -50,5 +30,3 @@ CREATE TABLE types_info(
     job_title_3_url VARCHAR(255)
 );
 
-
--- Section Creates surveys_info Table 
