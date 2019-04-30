@@ -79,7 +79,7 @@ module.exports = function(app) {
 
   // update user data with personality field from server and redirect to result/userspersonality
   app.put("/survey/:id", function(req, res) {
-    db.users
+    db.Users
       .update(
         { personality: req.body.personality },
         { where: { id: req.params.id } }
