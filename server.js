@@ -20,7 +20,7 @@ app.use(
 );
 
 // Middleware
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
@@ -34,7 +34,7 @@ app.engine(
 app.set("view engine", "handlebars");
 
 // Routes
-require("./routes/routes")(app);
+require("./routes/htmlRoutes")(app);
 
 var syncOptions = { force: false };
 
