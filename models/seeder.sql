@@ -3,15 +3,9 @@
 -------------------------------------------------
 -- Section Seeds the users_info table
 
-INSERT INTO users_infos (username, personality,"password", quest1, quest2 , quest3, quest4, quest5, quest6, quest7, quest8, quest9, quest10, quest11, quest12, quest13, quest14, quest15, quest16, quest17, quest18, quest19, quest20)  
-VALUES ('MrsDoubtfire','ESFJ','kiddos',1,3,4,5,1,3,4,5,3,4,5,3,1,2,2,2,1,2,3,4);
-
-INSERT INTO users_infos (username, personality,"password", quest1, quest2 , quest3, quest4, quest5, quest6, quest7, quest8, quest9, quest10, quest11, quest12, quest13, quest14, quest15, quest16, quest17, quest18, quest19, quest20)  
-VALUES ('JeffSkilling','ENTJ','blackgold',1,1,2,5,1,1,4,5,4,4,5,3,5,5,5,2,1,1,3,4);
-
-INSERT INTO users_infos (username, personality,"password", quest1, quest2 , quest3, quest4, quest5, quest6, quest7, quest8, quest9, quest10, quest11, quest12, quest13, quest14, quest15, quest16, quest17, quest18, quest19, quest20)  
-VALUES ('PTBarnum','ENFP','clowns',1,3,1,1,1,3,2,3,3,1,3,1,1,2,2,2,1,2,1,1);
-
+INSERT INTO `users` (`username`, `personality`, `password`) VALUES ('JeffSkilling','blackgold','ENTJ');
+INSERT INTO `users` (`username`, `personality`, `password`) VALUES ('MrsDoubtfire', 'ESFJ', 'kiddos');
+INSERT INTO `users` (`username`, `personality`, `password`) VALUES ('PTBarnum','ENFP','clowns');
 SELECT * FROM users_infos;
 
 -------------------------------------------------
