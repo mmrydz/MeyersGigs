@@ -266,7 +266,8 @@
             <br>
             <br>
             <!----- Submit ----->
-            <button type="submit" class="submit" class="btn btn-primary btn-lg bt-block" id="submit">Submit</button>
+            {{!-- <button type="submit" class="submit" class="btn btn-primary btn-lg bt-block" id="submit">Submit</button> --}}
+            <button> <a href="../../results/ISTJ">Submit</a></button>
         </div>
     </form>
     <br>
@@ -275,7 +276,7 @@
 
 <!---------------  Javascript ------------------------------>
 
-<script type="text/javascript">
+{{!-- <script type="text/javascript">
     // In this code below we create the Front-end JavaScript which grabs our form data and interprets it as a personality type
 
     $(".submit").on("click", function (event) {
@@ -409,7 +410,7 @@
 
 
 
-
+ --}}
 
     // resets the form after submit
     $("#survey")[0].reset();
