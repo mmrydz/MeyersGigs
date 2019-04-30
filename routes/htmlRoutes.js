@@ -40,8 +40,10 @@ module.exports = function(app) {
     console.log(username);
     console.log(password);
     console.log(pwvfy);
-    if(username && password === pwvfy)
-  })
+    if (username && password === pwvfy) {
+      db.Users.create({});
+    }
+  });
 
   app.put("/survey/:id", function(req, res) {
     var userid = req.params.id;
