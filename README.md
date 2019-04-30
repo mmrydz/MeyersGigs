@@ -15,10 +15,10 @@ The app is deployed via Heroku utilizing JawsDB to connect with mysql.
 
 Authors
 -------
-Jared Cole-Lewis
-Ben Leone
-William McFall
-Meg Rydzewski
+* Jared Cole-Lewis
+* Ben Leone
+* William McFall
+* Meg Rydzewski
 
 License
 -------
