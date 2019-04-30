@@ -39,10 +39,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">{{this.job_title_1}}</h5>
-                            <button type="button" class="btn btn-link text-left" data-toggle="modal"
-                                data-target="#Modal1">
-                                Search for open {{this.job_title_1}} jobs in your area
-                            </button>
+                            <a href={{this.job_title_1_url}}><img src={{this.job_title_1_img}} /></a>
                         </div>
                     </div>
                 </div>
@@ -50,10 +47,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">{{this.job_title_2}}</h5>
-                            <button type="button" class="btn btn-link text-left" data-toggle="modal"
-                                data-target="#Modal2">
-                                Search for open {{this.job_title_2}} jobs in your area
-                            </button>
+                            <a href={{this.job_title_2_url}}><img src={{this.job_title_2_img}} /></a>
                         </div>
                     </div>
                 </div>
@@ -61,120 +55,11 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">{{this.job_title_3}}</h5>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-link text-left" data-toggle="modal"
-                                data-target="#Modal3">
-                                Search for open {{this.job_title_3}} jobs in your area
-                            </button>
+                            <a href={{this.job_title_3_url}}><img src={{this.job_title_3_img}} /></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Modal 1 -->
-            <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">{{this.job_title_1}} Jobs</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <form>
-                                    <label for="exampleFormControlTextarea1">City:</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                                </form>
-                                <form>
-                                    <label for="exampleFormControlTextarea1">State:</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                                </form>
-                                <form>
-                                    <label for="exampleFormControlTextarea1">Country:</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Search</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal 2 -->
-            <div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">{{this.job_title_2}} Jobs</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <form>
-                                    <label for="exampleFormControlTextarea1">City:</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                                </form>
-                                <form>
-                                    <label for="exampleFormControlTextarea1">State:</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                                </form>
-                                <form>
-                                    <label for="exampleFormControlTextarea1">Country:</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                                </form>
-                            </div>
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Search</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal 3 -->
-            <div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">{{this.job_title_3}} Jobs</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <form>
-                                    <label for="exampleFormControlTextarea1">City:</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                                </form>
-                                <form>
-                                    <label for="exampleFormControlTextarea1">State:</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                                </form>
-                                <form>
-                                    <label for="exampleFormControlTextarea1">Country:</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-                                </form>
-                            </div>
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Search</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             {{/each}}
         </div>
     </div>
