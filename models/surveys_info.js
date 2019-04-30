@@ -3,7 +3,8 @@ module.exports = function(sequelize, DataTypes) {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
-      allowNull: false
+      autoIncrement: true,
+      allowNull: true
     },
     quest1: {
       type: DataTypes.INTEGER,
@@ -104,7 +105,15 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       primaryKey: false,
       allowNull: true
-    }
+    },
+    createdAt: {
+      type: DataTypes.DATE,
+      defaultValue: sequelize.literal('NOW()'),
+    },
+    updatedAt: {
+      type: DataTypes.DATE,
+      defaultValue: sequelize.literal('NOW()'),
+    },
   });
 
   surveys_info.associate = function(models) {

@@ -1,40 +1,36 @@
 module.exports = function(sequelize, DataTypes) {
-  var types_info = sequelize.define("types_info", {
-    id: {
+  var users_info = sequelize.define("users_info", {
+    id:{
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
       allowNull: true
     },
+    uuid: {
+      type: DataTypes.UUID,
+      defaultValue: DataTypes.UUIDV1,
+      primaryKey: false,
+      allowNull: false,
+    },
+    username: {
+      type: DataTypes.STRING,
+      primaryKey: false,
+      allowNull: false,
+    },
+    firstname: {
+      type: DataTypes.STRING,
+      primaryKey: false,
+      allowNull: false,
+    },
+    password: {
+      type: DataTypes.STRING,
+      primaryKey: false,
+      allowNull: false,
+    },
     personality: {
       type: DataTypes.STRING,
       primaryKey: false,
-      allowNull: true
-    },
-    description: {
-      type: DataTypes.TEXT,
-      primaryKey: false,
-      allowNull: true
-    },
-    img_url: {
-      type: DataTypes.STRING,
-      primaryKey: false,
-      allowNull: true
-    },
-    job_title_1: {
-      type: DataTypes.STRING,
-      primaryKey: false,
-      allowNull: true
-    },
-    job_title_2: {
-      type: DataTypes.STRING,
-      primaryKey: false,
-      allowNull: true
-    },
-    job_title_3: {
-      type: DataTypes.STRING,
-      primaryKey: false,
-      allowNull: true
+      allowNull: true,
     },
     createdAt: {
       type: DataTypes.DATE,
@@ -44,7 +40,24 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.DATE,
       defaultValue: sequelize.literal('NOW()'),
     },
-  });
+  },
+    {
+      indexes: [
+          {
+              unique: true,
+              fields: ['uuid']
+          }
+      ]
+    },
+  );
 
-  return types_info;
+  users_info.associate = function(models) {
+    users_info.hasMany(models.surveys_info, {
+      onDelete: "cascade"
+    });
+  };
+
+  return users_info;
 };
+
+
