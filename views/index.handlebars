@@ -1,0 +1,58 @@
+<div id="home">
+    <div class="container">
+        <div class="jumbotron py-2 mt-2">
+            <div class="row">
+                <h1>Welcome to Meyers Gigs!</h1>
+            </div>
+            <div class="row">
+                <h3>Find your perfect job based on your Myers-Briggs Personality Test</h3>
+            </div>
+            <div class="row">
+                <p>Explanation: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab asperiores hic facilis error
+                    deserunt ducimus qui suscipit animi non, eos rem nemo, quos obcaecati eum, fuga beatae voluptates
+                    voluptas
+                    labore.</p>
+            </div>
+        </div>
+        <div class="row no-gutters d-flex justify-content-around">
+            <div class="card col-4">
+                <div class="card-body">
+                    <p class="card-text text-center">I have already taken the test.<br>Show me the jobs!</p>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary">JOBS!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-4">
+                <div class="card-body">
+                    <p class="card-text text-center">I need to take the test.<br>Let's Go!</p>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-danger">TEST!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="loginModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="auth" method="POST">
+                            <input type="text" name="username" placeholder="Username" >
+                            <br>
+                            <input type="password" name="password" placeholder="Password" >
+                            <input type="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/index.js"></script>

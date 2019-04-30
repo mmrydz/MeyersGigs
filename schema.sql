@@ -3,7 +3,7 @@ CREATE DATABASE meyers_gigs_db DEFAULT CHARACTER SET utf8 COLLATE utf8_general_c
 
 USE meyers_gigs_db;
 
-CREATE TABLE users_info(
+CREATE TABLE users(
    `id` INT(11) NOT NULL AUTO_INCREMENT UNIQUE,
    `username` VARCHAR(100),
    `password` VARCHAR(255),
@@ -11,3 +11,5 @@ CREATE TABLE users_info(
    PRIMARY KEY(id)
 )
 ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `users` (`username`, `password`) VALUES ('John', 'password123');
