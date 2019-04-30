@@ -22,9 +22,12 @@ VALUES (
 'Accountant',
 'Financial Analyst',
 'Engineer',
-'<a href="https://www.indeed.com/jobs?q=Accountant&l=Washington%2C+DC"><img src="/img/ISTJ_Accountant_img.JPG" /></a>',
-'<a href="https://www.indeed.com/jobs?q=Financial+Analyst&l=Washington%2C+DC"><img src="/img/ISTJ_Financial_Analyst_img.JPG" /></a>',
-'<a href="https://www.indeed.com/jobs?q=Engineer&l=Washington%2C+DC"><img src="/img/ISTJ_Engineer_img.JPG" /></a>'
+'/img/ISTJ_Accountant_img.JPG',    
+'/img/ISTJ_Financial_Analyst_img.JPG',
+'/img/ISTJ_Engineer_img.JPG",
+'https://www.indeed.com/jobs?q=Accountant&l=Washington%2C+DC',
+'https://www.indeed.com/jobs?q=Financial+Analyst&l=Washington%2C+DC',
+'https://www.indeed.com/jobs?q=Engineer&l=Washington%2C+DC'
 );
 
 
