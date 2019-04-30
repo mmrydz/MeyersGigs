@@ -8,8 +8,8 @@ CREATE TABLE users(
    `username` VARCHAR(100),
    `password` VARCHAR(255),
    `personality` VARCHAR(255),
-   `quest1` INT,
-   `quest2` INT,
+   quest1 INT,
+   quest2 INT,
     quest3 INT,
     quest4 INT,
   quest5 INT,
@@ -42,9 +42,12 @@ CREATE TABLE types_info(
     job_title_1 VARCHAR(255),
     job_title_2 VARCHAR(255),
     job_title_3 VARCHAR(255),
-    img_url_job_title_1 VARCHAR(255),
-    img_url_job_title_2 VARCHAR(255),
-    img_url_job_title_3 VARCHAR(255)
+    job_title_1_img VARCHAR(255),
+    job_title_2_img VARCHAR(255),
+    job_title_3_img VARCHAR(255),
+    job_title_1_url VARCHAR(255),
+    job_title_2_url VARCHAR(255),
+    job_title_3_url VARCHAR(255)
 );
 
 <<<<<<< HEAD
