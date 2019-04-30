@@ -8,17 +8,17 @@ CREATE TABLE users(
    `username` VARCHAR(100),
    `password` VARCHAR(255),
    `personality` VARCHAR(255),
-   quest1 INT,
-   quest2 INT,
-    quest3 INT,
-    quest4 INT,
-  quest5 INT,
-  quest6 INT,
-  quest7 INT,
-  quest8 INT,
-  quest9 INT,
-  quest10 INT,
-  quest11 INT,
+   `quest1` INT,
+   `quest2` INT,
+   `quest3` INT,
+   `quest4` INT,
+   `quest5` INT,
+   `quest6` INT,
+   `quest7` INT,
+   `quest8` INT,
+   `quest9` INT,
+   `quest10` INT,
+   `quest11` INT,
   quest12 INT,
   quest13 INT,
   quest14 INT,
@@ -50,21 +50,5 @@ CREATE TABLE types_info(
     job_title_3_url VARCHAR(255)
 );
 
-<<<<<<< HEAD
 
 -- Section Creates surveys_info Table 
-=======
-DELIMITER ;;
-CREATE TRIGGER before_insert_users_info
-BEFORE INSERT ON users_info
-FOR EACH ROW
-BEGIN
-  IF new.uuid IS NULL THEN
-    SET new.uuid = uuid();
-  END IF;
-END
-;;
-
-CREATE INDEX idx_uuid
-ON users_info (uuid);
->>>>>>> bf1a5aececb8e88022ee1f2ba16d940c79faaaf7

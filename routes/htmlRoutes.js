@@ -32,7 +32,37 @@ module.exports = function(app) {
       res.end();
     }
   });
-
+  app.put("/survey", function(req, res) {
+    db.Users.update(
+      {
+        quest1: req.body.quest1,
+        quest2: req.body.quest2,
+        quest3: req.body.quest3,
+        quest4: req.body.quest4,
+        quest5: req.body.quest5,
+        quest6: req.body.quest6,
+        quest7: req.body.quest7,
+        quest8: req.body.quest8,
+        quest9: req.body.quest9,
+        quest10: req.body.quest10,
+        quest11: req.body.quest11,
+        quest12: req.body.quest12,
+        quest13: req.body.quest13,
+        quest14: req.body.quest14,
+        quest15: req.body.quest15,
+        quest16: req.body.quest16,
+        quest17: req.body.quest17,
+        quest18: req.body.quest18,
+        quest19: req.body.quest19,
+        quest20: req.body.quest20
+      },
+      {
+        where: { id: results.dataValues.id }
+      }
+    ).then(function() {
+      res.redirect("/results");
+    });
+  });
   // Load survey page and pass in user_info
   // The user's personality type is determined as follows:
   // 1. If total score for questions 1-5 <= 13, then their first letter is I.  If the total score is  > 13 , E.
