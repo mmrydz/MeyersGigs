@@ -13,43 +13,38 @@ module.exports = function(app) {
     console.log(username);
     console.log(password);
     if (username && password) {
-      db.users_info
-        .findOne({
-          where: { username: username, password: password }
-        })
-        .then(function(results) {
-          console.log(results);
-          if (results.length > 0) {
-            req.session.loggedin = true;
-            req.session.username = username;
-            res.redirect("survey");
-          } else {
-            response.send("Incorrect Username and/or Password!");
-          }
-          res.end();
-        });
+      db.Users.findOne({
+        where: { username: username, password: password }
+      }).then(function(results) {
+        console.log(results.dataValues);
+        if (
+          username === results.dataValues.username &&
+          password === results.dataValues.password
+        ) {
+          res.redirect("/survey");
+        } else {
+          res.send("Incorrect Username and/or Password!");
+        }
+        res.end();
+      });
     } else {
-      response.send("Please enter Username and Password!");
-      response.end();
+      res.send("Please enter Username and Password!");
+      res.end();
     }
   });
+
   // Load survey page and pass in user_info
   // The user's personality type is determined as follows:
   // 1. If total score for questions 1-5 <= 13, then their first letter is I.  If the total score is  > 13 , E.
-  //    Append that letter to the ‘personality’ string in users_info.
+  //    Append that letter to the ‘personality’ string in users.
   // 2. If total score for questions 6-10 <= 13, then their first letter is N.  If the total score is  > 13 , S.
-  //    Append that letter to the ‘personality’ string in users_info.
+  //    Append that letter to the ‘personality’ string in userss.
   // 3. If total score for questions 11-15 <= 13, then their first letter is F.  If the total score is  > 13 , T.
-  //    Append that letter to the ‘personality’ string in users_info.
+  //    Append that letter to the ‘personality’ string in users.
   // 4. If total score for questions 16-20 <= 13, then their first letter is J.  If the total score is  > 13 , P.
-  //    Append that letter to the ‘personality’ string in users_info.
+  //    Append that letter to the ‘personality’ string in users.
   app.get("/survey", function(req, res) {
-    db.users_info.findAll({}).then(function(dbExamples) {
-      res.render("survey", {
-        msg: "The Personality Test!",
-        examples: dbExamples
-      });
-    });
+    res.render("survey");
   });
 
   // Render 404 page for any unmatched routes

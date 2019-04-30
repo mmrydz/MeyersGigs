@@ -108,11 +108,7 @@ module.exports = function(sequelize, DataTypes) {
   });
 
   surveys_info.associate = function(models) {
-    surveys_info.belongsTo(models.users_info, {
-      foreignKey: {
-        allowNull: false
-      }
-    });
+    // Associations defined here
   };
 
   return surveys_info;
