@@ -12,9 +12,9 @@ SELECT * FROM users;
 -------------------------------------------------
 -- Section Seeds the types_info table
 
-TRUNCATE TABLE types_info;
+TRUNCATE TABLE types_infos;
 
-INSERT INTO types_info (personality, description, img_url, 
+INSERT INTO types_infos (personality, description, img_url, 
 job_title_1, job_title_2, job_title_3, 
 job_title_1_img, job_title_2_img, job_title_3_img,
 job_title_1_url, job_title_2_url, job_title_3_url)
@@ -34,7 +34,7 @@ VALUES (
 );
 
 
-INSERT INTO types_info (personality, description, img_url, 
+INSERT INTO types_infos (personality, description, img_url, 
 job_title_1, job_title_2, job_title_3, 
 job_title_1_img, job_title_2_img, job_title_3_img,
 job_title_1_url, job_title_2_url, job_title_3_url)
@@ -53,7 +53,7 @@ VALUES (
 'https://www.indeed.com/q-teacher-l-Washington,-DC-jobs.html'
 );
 
-INSERT INTO types_info (personality, description, img_url, 
+INSERT INTO types_infos (personality, description, img_url, 
 job_title_1, job_title_2, job_title_3, 
 job_title_1_img, job_title_2_img, job_title_3_img,
 job_title_1_url, job_title_2_url, job_title_3_url)
@@ -72,7 +72,7 @@ VALUES (
 'https://www.indeed.com/jobs?q=clinical%20psychologist&l=Washington%2C%20DC&advn=6134831459720103&vjk=140ef0afcc8458a4'
 );
 
-INSERT INTO types_info (personality, description, img_url, 
+INSERT INTO types_infos (personality, description, img_url, 
 job_title_1, job_title_2, job_title_3, 
 job_title_1_img, job_title_2_img, job_title_3_img,
 job_title_1_url, job_title_2_url, job_title_3_url)
@@ -91,7 +91,7 @@ VALUES (
 'https://www.indeed.com/jobs?q=Engineer&l=Washington%2C+DC'
 );
 
-INSERT INTO types_info (personality, description, img_url, 
+INSERT INTO types_infos (personality, description, img_url, 
 job_title_1, job_title_2, job_title_3, 
 job_title_1_img, job_title_2_img, job_title_3_img,
 job_title_1_url, job_title_2_url, job_title_3_url)
@@ -110,7 +110,7 @@ VALUES (
 'https://www.indeed.com/jobs?q=Mechanic&l=Washington%2C+DC'
 );
 
-INSERT INTO types_info (personality, description, img_url, 
+INSERT INTO types_infos (personality, description, img_url, 
 job_title_1, job_title_2, job_title_3, 
 job_title_1_img, job_title_2_img, job_title_3_img,
 job_title_1_url, job_title_2_url, job_title_3_url)
@@ -129,7 +129,7 @@ VALUES (
 'https://www.indeed.com/jobs?q=Cosmetologist&l=Washington%2C+DC'
 );
 
-INSERT INTO types_info (personality, description, img_url, 
+INSERT INTO types_infos (personality, description, img_url, 
 job_title_1, job_title_2, job_title_3, 
 job_title_1_img, job_title_2_img, job_title_3_img,
 job_title_1_url, job_title_2_url, job_title_3_url)
@@ -148,7 +148,7 @@ VALUES (
 'https://www.indeed.com/jobs?q=Curator&l=Washington%2C+DC'
 );
 
-INSERT INTO types_info (personality, description, img_url, 
+INSERT INTO types_infos (personality, description, img_url, 
 job_title_1, job_title_2, job_title_3, 
 job_title_1_img, job_title_2_img, job_title_3_img,
 job_title_1_url, job_title_2_url, job_title_3_url)
@@ -167,7 +167,7 @@ VALUES (
 'https://www.indeed.com/jobs?q=Architect&l=Washington%2C+DC'
 );
 
-INSERT INTO types_info (personality, description, img_url, 
+INSERT INTO types_infos (personality, description, img_url, 
 job_title_1, job_title_2, job_title_3, 
 job_title_1_img, job_title_2_img, job_title_3_img,
 job_title_1_url, job_title_2_url, job_title_3_url)
@@ -186,7 +186,7 @@ VALUES (
 'https://www.indeed.com/jobs?q=Construction+Worker&l=Washington%2C+DC'
 );
 
-INSERT INTO types_info (personality, description, img_url, 
+INSERT INTO types_infos (personality, description, img_url, 
 job_title_1, job_title_2, job_title_3, 
 job_title_1_img, job_title_2_img, job_title_3_img,
 job_title_1_url, job_title_2_url, job_title_3_url)
@@ -205,7 +205,7 @@ VALUES (
 'https://www.indeed.com/jobs?q=Social+Worker&l=Washington%2C+DC'
 );
 
-INSERT INTO types_info (personality, description, img_url, 
+INSERT INTO types_infos (personality, description, img_url, 
 job_title_1, job_title_2, job_title_3, 
 job_title_1_img, job_title_2_img, job_title_3_img,
 job_title_1_url, job_title_2_url, job_title_3_url)
@@ -224,7 +224,7 @@ VALUES (
 'https://www.indeed.com/jobs?q=Real+Estate+Agent&l=Washington%2C+DC'
 );
 
-INSERT INTO types_info (personality, description, img_url, 
+INSERT INTO types_infos (personality, description, img_url, 
 job_title_1, job_title_2, job_title_3, 
 job_title_1_img, job_title_2_img, job_title_3_img,
 job_title_1_url, job_title_2_url, job_title_3_url)
@@ -243,7 +243,7 @@ VALUES (
 'https://www.indeed.com/jobs?q=Environmental+Scientist&l=Washington%2C+DC'
 );
 
-INSERT INTO types_info (personality, description, img_url, 
+INSERT INTO types_infos (personality, description, img_url, 
 job_title_1, job_title_2, job_title_3, 
 job_title_1_img, job_title_2_img, job_title_3_img,
 job_title_1_url, job_title_2_url, job_title_3_url)
@@ -262,7 +262,7 @@ VALUES (
 'https://www.indeed.com/jobs?q=Insurance+Agent&l=Washington%2C+DC'
 );
 
-INSERT INTO types_info (personality, description, img_url, 
+INSERT INTO types_infos (personality, description, img_url, 
 job_title_1, job_title_2, job_title_3, 
 job_title_1_img, job_title_2_img, job_title_3_img,
 job_title_1_url, job_title_2_url, job_title_3_url)
@@ -281,7 +281,7 @@ VALUES (
 'https://www.indeed.com/jobs?q=Child+Care+Provider&l=Washington%2C+DC'
 );
 
-INSERT INTO types_info (personality, description, img_url, 
+INSERT INTO types_infos (personality, description, img_url, 
 job_title_1, job_title_2, job_title_3, 
 job_title_1_img, job_title_2_img, job_title_3_img,
 job_title_1_url, job_title_2_url, job_title_3_url)
@@ -300,7 +300,7 @@ VALUES (
 'https://www.indeed.com/jobs?q=Advertising+Promotions+Manager&l=Washington%2C+DC'
 );
 
-INSERT INTO types_info (personality, description, img_url, 
+INSERT INTO types_infos (personality, description, img_url, 
 job_title_1, job_title_2, job_title_3, 
 job_title_1_img, job_title_2_img, job_title_3_img,
 job_title_1_url, job_title_2_url, job_title_3_url)
