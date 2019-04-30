@@ -1,3 +1,13 @@
-.list-group-item {
-  line-height: 2.5;
-}
+
+body{
+  font-family: 'Open Sans Condensed', sans-serif;
+};
+
+nav{
+  background-color: red;
+};
+
+#green{
+  background-color: red;
+};
+
