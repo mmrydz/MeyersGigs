@@ -6,6 +6,8 @@ Our user can go to our full stack web app, take a brief personality test, learn 
 
 Our app uses Node and Express Web Server,a MySQL database with a Sequelize ORM, has GET and POST routes for retrieving and adding new data, is deployed using Heroku (with data), and uses Realize.js (for our presentation) as our new technology. The folder structure meets the MVC paradigm requirements, and the coding meets good quality standards. We utilize Handlebars for server-side templating. We utilize jobs data from Indeed.com, celebrity personality data from mbtidatabase.com, and information on personality testing from Wikipedia: https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator. 
 
+Our presentation: https://willmcfall.github.io/Project_2_Presentation/
+
 The Experience
 --------------
 Users arrive on the home page where they are given information about the site and prompted to sign up via a modal in order totake the personality test. They are then redirected to the survey page. Upon submitting the survey, they are redirected to a results page where their personality type is rendered and described, along with celebrities who share the type, careers that are typically compatible with the type, and nearby jobs for those careers.  
