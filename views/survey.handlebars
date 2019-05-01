@@ -1,273 +1,279 @@
 <div class="container">
     <form action="survey" name="survey" id="survey" method="POST">
-        <h1>The Personality Test</h1>
-        <h4>Your Results Are Just 20 Clicks Away!</h4>
+        <div class="title_container">
+        <h1 class="text-center">The Personality Test</h1>
+        <h4 class="text-center">Your Results Are Just 20 Clicks Away!</h4>
+        </div>
         <br>
-        <br>
+        <div class="card col-12">
+            <div class="card-body">
+                <div class="form-group">
+                    <h3><strong>Question 1</strong></h3>
+                    <h4>I am seen as "outgoing" or as a "people person."</h4>
+                    <select class="form-option" id=quest_1 required>
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
 
-        <div class="form-group">
-            <h3><strong>Question 1</strong></h3>
-            <h4>I am seen as "outgoing" or as a "people person."</h4>
-            <select class="form-option" id=quest_1 required>
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
+                    <h3><strong>Question 2</strong></h3>
+                    <h4>I feel comfortable in groups and like working in them.</h4>
+                    <select class="form-option" id=quest_2 required>
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
 
-            <h3><strong>Question 2</strong></h3>
-            <h4>I feel comfortable in groups and like working in them.</h4>
-            <select class="form-option" id=quest_2 required>
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
+                    <h3><strong>Question 3</strong></h3>
+                    <h4>I have a wide range of friends and know lots of people.</h4>
+                    <select class="form-option" id=quest_3 required>
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
 
-            <h3><strong>Question 3</strong></h3>
-            <h4>I have a wide range of friends and know lots of people.</h4>
-            <select class="form-option" id=quest_3 required>
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
+                    <h3><strong>Question 4</strong></h3>
+                    <h4>I sometimes jump too quickly into an activity and don't allow enough time to think it over.</h4>
+                    <select class="form-option" id=quest_4 required>
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
 
-            <h3><strong>Question 4</strong></h3>
-            <h4>I sometimes jump too quickly into an activity and don't allow enough time to think it over.</h4>
-            <select class="form-option" id=quest_4 required>
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
+                    <h3><strong>Question 5</strong></h3>
+                    <h4>Before I start a project, I sometimes forget to stop and get clear on what I want to do and why.
+                    </h4>
+                    <select class="form-option" id=quest_5 required>
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
 
-            <h3><strong>Question 5</strong></h3>
-            <h4>Before I start a project, I sometimes forget to stop and get clear on what I want to do and why.</h4>
-            <select class="form-option" id=quest_5 required>
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
+                    <h3><strong>Question 6</strong></h3>
+                    <h4>I remember events as snapshots of what actually happened.</h4>
+                    <select class="form-option" id=quest_6 required>
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
 
-            <h3><strong>Question 6</strong></h3>
-            <h4>I remember events as snapshots of what actually happened.</h4>
-            <select class="form-option" id=quest_6 required>
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
+                    <h3><strong>Question 7</strong></h3>
+                    <h4>I solve problems by working through facts until I understand the problem.</h4>
+                    <select class="form-option" id=quest_7 required>
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
 
-            <h3><strong>Question 7</strong></h3>
-            <h4>I solve problems by working through facts until I understand the problem.</h4>
-            <select class="form-option" id=quest_7 required>
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
+                    <h3><strong>Question 8</strong></h3>
+                    <h4>I am pragmatic and look to the "bottom line."</h4>
+                    <select class="form-option" id=quest_8 required>
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
 
-            <h3><strong>Question 8</strong></h3>
-            <h4>I am pragmatic and look to the "bottom line."</h4>
-            <select class="form-option" id=quest_8 required>
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
+                    <h3><strong>Question 9</strong></h3>
+                    <h4>I start with facts and then form a big picture.</h4>
+                    <select class="form-option" id=quest_9 required>
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
 
-            <h3><strong>Question 9</strong></h3>
-            <h4>I start with facts and then form a big picture.</h4>
-            <select class="form-option" id=quest_9 required>
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
+                    <h3><strong>Question 10</strong></h3>
+                    <h4>I trust experience first and trust words and symbols less.</h4>
+                    <select class="form-option" id=quest_10 required>
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
 
-            <h3><strong>Question 10</strong></h3>
-            <h4>I trust experience first and trust words and symbols less.</h4>
-            <select class="form-option" id=quest_10 required>
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
+                    <h3><strong>Question 11</strong></h3>
+                    <h4>I look for logical explanations or solutions to most everything."</h4>
+                    <select class="form-option" id=quest_11 required>
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
 
-            <h3><strong>Question 11</strong></h3>
-            <h4>I look for logical explanations or solutions to most everything."</h4>
-            <select class="form-option" id=quest_11 required>
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
+                    <h3><strong>Question 12</strong></h3>
+                    <h4>I make decisions with my head and want to be fair.</h4>
+                    <select class="form-option" id=quest_12 required>
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
 
-            <h3><strong>Question 12</strong></h3>
-            <h4>I make decisions with my head and want to be fair.</h4>
-            <select class="form-option" id=quest_12 required>
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
+                    <h3><strong>Question 13</strong></h3>
+                    <h4>I believe telling the truth is more important than being tactful.</h4>
+                    <select class="form-option" id=quest_13 required>
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
 
-            <h3><strong>Question 13</strong></h3>
-            <h4>I believe telling the truth is more important than being tactful.</h4>
-            <select class="form-option" id=quest_13 required>
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
+                    <h3><strong>Question 14</strong></h3>
+                    <h4>Sometimes I miss or don't value the "people" part of a situation.</h4>
+                    <select class="form-option" id=quest_14 required>
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
 
-            <h3><strong>Question 14</strong></h3>
-            <h4>Sometimes I miss or don't value the "people" part of a situation.</h4>
-            <select class="form-option" id=quest_14 required>
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
+                    <h3><strong>Question 15</strong></h3>
+                    <h4>I can be seen as too task-oriented, uncaring, or indifferent.</h4>
+                    <select class="form-option" id=quest_15 required>
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
 
-            <h3><strong>Question 15</strong></h3>
-            <h4>I can be seen as too task-oriented, uncaring, or indifferent.</h4>
-            <select class="form-option" id=quest_15 required>
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
+                    <h3><strong>Question 16</strong></h3>
+                    <h4>I appear to be loose and casual. I like to keep plans to a minimum.</h4>
+                    <select class="form-option" id=quest_16 required>
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
 
-            <h3><strong>Question 16</strong></h3>
-            <h4>I appear to be loose and casual. I like to keep plans to a minimum.</h4>
-            <select class="form-option" id=quest_16 required>
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
+                    <h3><strong>Question 17</strong></h3>
+                    <h4>I like to approach work as play or mix work and play.</h4>
+                    <select class="form-option" id=quest_17 required>
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
 
-            <h3><strong>Question 17</strong></h3>
-            <h4>I like to approach work as play or mix work and play.</h4>
-            <select class="form-option" id=quest_17 required>
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
+                    <h3><strong>Question 18</strong></h3>
+                    <h4>I work in bursts of energy."</h4>
+                    <select class="form-option" id=quest_18 required>
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
 
-            <h3><strong>Question 18</strong></h3>
-            <h4>I work in bursts of energy."</h4>
-            <select class="form-option" id=quest_18 required>
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
+                    <h3><strong>Question 19</strong></h3>
+                    <h4>I am stimulated by an approaching deadline.</h4>
+                    <select class="form-option" id=quest_19 required>
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
 
-            <h3><strong>Question 19</strong></h3>
-            <h4>I am stimulated by an approaching deadline.</h4>
-            <select class="form-option" id=quest_19 required>
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
-
-            <h3><strong>Question 20</strong></h3>
-            <h4>Sometimes I stay open to new information so long I miss making decisions when they are needed.</h4>
-            <select class="form-option" id=quest_20 required>
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
-            <!----- Submit ----->
-            {{!-- <button type="submit" class="submit" class="btn btn-primary btn-lg bt-block" id="submit">Submit</button> --}}
-            <button> <a href="../../results/ESFJ">Submit</a></button>
+                    <h3><strong>Question 20</strong></h3>
+                    <h4>Sometimes I stay open to new information so long I miss making decisions when they are needed.
+                    </h4>
+                    <select class="form-option" id=quest_20 required>
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <br>
+                    <br>
+                    <!----- Submit ----->
+                    {{!-- <button type="submit" class="submit" class="btn btn-primary btn-lg bt-block" id="submit">Submit</button> --}}
+                    <button> <a href="../../results/ESFJ">Submit</a></button>
+                </div>
+            </div>
         </div>
     </form>
     <br>
@@ -404,14 +410,14 @@
     //    console.log('ALWAYS');
     //}); --}}
 
-
+{{!-- 
     };
 
 
 
 
- --}}
-
+ {{!-- --}} --}} --}}
+{{!--  --}}
     // resets the form after submit
     $("#survey")[0].reset();
                 }
